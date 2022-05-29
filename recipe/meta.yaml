@@ -1,5 +1,5 @@
 {% set name = "batman-package" %}
-{% set version = "2.4.8" %}
+{% set version = "2.4.9" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7ebc7e83e60473801068ea726532f0b6403e584ec1f96b0310e91f5554d05b1
+  sha256: bcb88925692ccce0bcf1f8775963971f5cf29848f8498bdc47bf1ae6de0fb08e
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
