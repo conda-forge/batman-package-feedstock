@@ -21,7 +21,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - numpy >1.11
+    - numpy
     - pip
     - python
   run:
