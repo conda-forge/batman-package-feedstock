@@ -31,7 +31,6 @@ requirements:
     - python
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
