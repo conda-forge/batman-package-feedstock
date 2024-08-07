@@ -1,0 +1,11 @@
+diff --git a/batman/openmp.py b/batman/openmp.py
+index 7d6a16d..de8848c 100644
+--- a/batman/openmp.py
++++ b/batman/openmp.py
+@@ -1,5 +1,5 @@
+ from __future__ import print_function
+-from distutils.ccompiler import new_compiler
++
+ import os
+ import sys
+ import tempfile
