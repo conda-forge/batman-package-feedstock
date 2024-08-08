@@ -35,10 +35,8 @@ requirements:
 test:
   imports:
     - batman
-  requires:
-    - pytest
   commands:
-    - pytest tests  # [py==311 and linux]
+    - python -c "import batman; batman.test()"  # [py==311 and linux]
 
 about:
   home: https://github.com/lkreidberg/batman
