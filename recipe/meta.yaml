@@ -26,11 +26,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - numpy <2
+    - numpy
     - pip
     - python
   run:
     - python
+    - numpy  <2
 
 test:
   imports:
