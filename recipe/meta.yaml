@@ -26,7 +26,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - numpy
+    - numpy <2
     - pip
     - python
   run:
@@ -35,6 +35,10 @@ requirements:
 test:
   imports:
     - batman
+  requires:
+    - pytest
+  commands:
+    - pytest tests  # [py==311 and linux]
 
 about:
   home: https://github.com/lkreidberg/batman
