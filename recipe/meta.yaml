@@ -11,7 +11,6 @@ source:
   sha256: c97fae5485ab0baadf39d221a945692da0bcc2286ef8eab1599e739718347239
   patches:
     # Patch from upstream to avoid distutils to be released in 2.5.0
-    - setup.py.patch  # [py>=312]
     - openmp.py.patch  # [py>=312]
 
 build:
